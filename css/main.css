@@ -1,0 +1,124 @@
+/* DECLARACIONES GLOBALES */
+
+:root {
+    --blanco: #ffffff;
+    --negro: #050608;
+    --cracker: #c84078;
+    --machine: #178574;
+    --now: #1b8580;
+    --humanz: #c65151;
+    --plastic: #a02018;
+    --fall: #882828;
+    --sides: #702028;
+    --demon: #a04848;
+    --laika: #3070b8;
+    --gorillaz: #5b8141;
+
+    /* font-size: XXpx; NO DEFINIRLO CUANDO SEA 16px */
+}
+
+/* Colores de fondo */
+
+.color-blanco {
+    background-color: var(--blanco);
+}
+
+.color-negro {
+    background-color: var(--negro);
+}
+
+.color-cracker {
+    background-color: var(--cracker);
+}
+
+.color-machine {
+    background-color: var(--machine);
+}
+
+.color-now {
+    background-color: var(--now);
+}
+
+.color-humanz {
+    background-color: var(--humanz);
+}
+
+.color-plastic {
+    background-color: var(--plastic);
+}
+
+.color-fall {
+    background-color: var(--fall);
+}
+
+.color-sides {
+    background-color: var(--sides);
+}
+
+.color-demon {
+    background-color: var(--demon);
+}
+
+.color-laika {
+    background-color: var(--laika);
+}
+
+.color-gorillaz {
+    background-color: var(--gorillaz);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+    transition: all 300ms ease-in-out;
+    /* Al pulsar un elemento en mobile no sale el recuadro azul */
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}
+
+/* Hace una pequeña transición al navegar por la página con enlaces, ¡merci Aitor! 👌 */
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+strong {
+    font-weight: 700;
+}
+
+::selection {
+    color: var(--negro);
+    background-color: var(--blanco);
+}
+
+/* Scrollbar CSS */
+/* Firefox */
+* {
+    scrollbar-width: auto;
+    scrollbar-color: var(--blanco);
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    width: 15px;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: var(--blanco);
+}
+
+body {
+    font-family: "Goga", Helvetica, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: var(--blanco);
+    background-color: var(--negro);
+    font-feature-settings: "ss02";
+    /* Variante de la tipografía Goga */
+    transition: all 500ms ease;
+    transition: background-color 1s ease;
+}

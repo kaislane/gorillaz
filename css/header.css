@@ -1,0 +1,119 @@
+/* HEADER */
+
+.logo-gorillaz {
+    width: 75vw;
+    margin: 0px 0px 15px;
+}
+
+@media (min-width: 768px) {
+    .logo-gorillaz {
+        width: 50vw;
+        margin: 0px 0px 20px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .logo-gorillaz {
+        width: 25vw;
+        margin: 0px 0px 25px;
+    }
+}
+
+header h3 {
+    font-size: 1rem;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+/* Menú con la discografía */
+
+.menu-albumes {
+    margin: 0px 10vw;
+    padding-top: 30px;
+}
+
+@media (min-width: 768px) {
+    .menu-albumes {
+        margin: 0px 15vw;
+        padding-top: 40px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .menu-albumes {
+        margin: 0px 20vw;
+        padding-top: 50px;
+    }
+}
+
+.menu-albumes ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    column-gap: 15px;
+}
+
+@media (min-width: 768px) {
+    .menu-albumes ul {
+        column-gap: 30px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .menu-albumes ul {
+        column-gap: 50px;
+    }
+}
+
+.menu-albumes li {
+    width: fit-content;
+    padding: 2px 10px;
+}
+
+.menu-albumes li a {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--blanco);
+}
+
+@media (min-width: 768px) {
+    .menu-albumes li a {
+        font-size: 2.5rem;
+    }
+}
+
+@media (min-width: 1440px) {
+    .menu-albumes li a {
+        font-size: 3rem;
+    }
+}
+
+/* Mostrar la imagen del álbum al hacer hover */
+
+.menu-albumes .album:hover {
+    position: relative;
+    z-index: 100;
+}
+
+.menu-albumes .album:hover~.img-hover {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+}
+
+.img-hover {
+    position: absolute;
+    width: clamp(200px, 25vw, 400px);
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0;
+    pointer-events: none;
+    z-index: 10;
+    border-radius: 10px;
+    box-shadow: 0 0 1rem rgba(5, 6, 8, 0.7);
+}
+
+@media (min-width: 1440px) {
+    .img-hover {
+        box-shadow: 0 0 2rem rgba(5, 6, 8, 0.7);
+    }
+}

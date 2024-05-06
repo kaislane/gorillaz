@@ -1,0 +1,1065 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Gorillaz</title>
+    <!-- Personalizo el favicon de la pestaña -->
+    <link rel="shortcut icon" href="img/favicon.ico" />
+
+    <!-- Añado las tipografías de Google Fonts -->
+    
+    <!-- Enlace a las hojas de estilos -->
+    <link rel="stylesheet" type="text/css" href="css/fonts.css" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" href="css/header.css" />
+    <link rel="stylesheet" type="text/css" href="css/discografia.css" />
+
+  </head>
+
+  <body>
+    <header class="panel" data-color="negro">
+      <div>
+        <img class="logo-gorillaz" src="img/logo-gorillaz.png" alt="Logotipo de Gorillaz"/>
+      </div>
+      <h3>Presents</h3>
+
+      <!-- Menú con la discografía, aparece la carátula del álbum al hacer hover -->
+      <nav id="menu" class="menu-albumes">
+        <ul id="lista-albumes">
+          <li class="album" data-src="img/01-Cracker-Island.jpg" data-color="var(--cracker)">
+            <a href="#cracker-island">Cracker Island</a>
+          </li>
+          <li class="album" data-src="img/02-Song-Machine.jpg" data-color="var(--machine)">
+            <a href="#song-machine">Song Machine</a>
+          </li>
+          <li class="album" data-src="img/03-The-Now-Now.jpg" data-color="var(--now)">
+            <a href="#the-now-now">The Now Now</a>
+          </li>
+          <li class="album" data-src="img/04-Humanz.jpg" data-color="var(--humanz)">
+            <a href="#humanz">Humanz</a>
+          </li>
+          <li class="album" data-src="img/05-Plastic-Beach.jpg" data-color="var(--plastic)">
+            <a href="#plastic-beach">Plastic Beach</a>
+          </li>
+          <li class="album" data-src="img/06-The-Fall.jpg" data-color="var(--fall)">
+            <a href="#the-fall">The Fall</a>
+          </li>
+          <li class="album" data-src="img/07-D-Sides.jpg" data-color="var(--sides)">
+            <a href="#d-sides">D-Sides</a>
+          </li>
+          <li class="album" data-src="img/08-Demon-Days.jpg" data-color="var(--demon)">
+            <a href="#demon-days">Demon Days</a>
+          </li>
+          <li class="album" data-src="img/09-Laika-Come-Home.jpg" data-color="var(--laika)">
+            <a href="#laika-come-home">Laika Come Home</a>
+          </li>
+          <li class="album" data-src="img/10-Gorillaz.jpg" data-color="var(--gorillaz)">
+            <a href="#gorillaz">Gorillaz</a>
+          </li>
+          <img src="img/01-Cracker-Island.jpg" class="img-hover" />
+        </ul>
+      </nav>
+    </header>
+
+    <section id="cracker-island" class="panel" data-color="cracker">
+
+      <figure class="sticker-wrapper">
+        <img src="img/sticker-2.png" alt="Sticker del álbum Cracker Island" />
+      </figure>
+
+      <article class="info-album">
+        <figure class="img-wrapper">
+          <img src="img/01-Cracker-Island.jpg" alt="Portada del álbum Cracker Island" />
+          <a class="icono-spotify" href="https://open.spotify.com/intl-es/album/4wtZQMNTC1O79kDxMBsEan?si=PPsj5QtkTFuwZfAnY7LWsQ" target="_blank"><svg width="100%" height="100%" viewBox="0 0 167.5 167.5">
+            <path fill="currentColor" d="M83.7 0C37.5 0 0 37.5 0 83.7c0 46.3 37.5 83.7 83.7 83.7 46.3 0 83.7-37.5 83.7-83.7S130 0 83.7 0zM122 120.8c-1.4 2.5-4.6 3.2-7 1.7-19.8-12-44.5-14.7-73.7-8-2.8.5-5.6-1.2-6.2-4-.2-2.8 1.5-5.6 4-6.2 32-7.3 59.6-4.2 81.6 9.3 2.6 1.5 3.4 4.7 1.8 7.2zM132.5 98c-2 3-6 4-9 2.2-22.5-14-56.8-18-83.4-9.8-3.2 1-7-1-8-4.3s1-7 4.6-8c30.4-9 68.2-4.5 94 11 3 2 4 6 2 9zm1-23.8c-27-16-71.6-17.5-97.4-9.7-4 1.3-8.2-1-9.5-5.2-1.3-4 1-8.5 5.2-9.8 29.6-9 78.8-7.2 109.8 11.2 3.7 2.2 5 7 2.7 10.7-2 3.8-7 5-10.6 2.8z"></path>
+          </svg></a>
+        </figure>
+        <div class="texto-album">
+          <a class="boton" href="#menu">Volver al menú</a>
+          <div class="titulo-album">
+            <h2>Cracker Island</h2>
+            <h3>2023 | 10 canciones</h3>
+            <p><strong>Cracker Island</strong> es el octavo álbum de estudio de la banda virtual británica Gorillaz,
+              fue lanzado el <strong>24 de febrero de 2023</strong> por medio de Parlophone y Warner Records. El álbum incluye colaboraciones con artistas como Stevie Nicks, Adeleye Omotayo, Thundercat, Tame Impala, Bad Bunny, Bootie Brown y Beck.</p>
+          </div>
+        </div>
+      </article>
+
+      <div class="canciones">
+        <!-- Ahora está hecho con flexbox en vez de con una tabla ;) -->
+        <div class="tabla-canciones">
+            <div class="fila">
+                <div>01</div>
+                <div>Cracker Island <em>(feat. Thundercat)</em></div>
+                <div>3:33</div>
+            </div>
+            <div class="fila">
+                <div>02</div>
+                <div>Oil <em>(feat. Stevie Nicks)</em></div>
+                <div>3:50</div>
+            </div>
+            <div class="fila">
+                <div>03</div>
+                <div>The Tired Influencer</div>
+                <div>3:31</div>
+            </div>
+            <div class="fila">
+                <div>04</div>
+                <div>Silent Running <em>(feat. Adeleye Omotayo)</em></div>
+                <div>4:26</div>
+            </div>
+            <div class="fila">
+                <div>05</div>
+                <div>New Gold <em>(feat. Tame Impala and Bootie Brown)</em></div>
+                <div>3:35</div>
+            </div>
+            <div class="fila">
+                <div>06</div>
+                <div>Baby Queen</div>
+                <div>3:40</div>
+            </div>
+            <div class="fila">
+                <div>07</div>
+                <div>Tarantula</div>
+                <div>3:31</div>
+            </div>
+            <div class="fila">
+                <div>08</div>
+                <div>Tormenta <em>(feat. bad Bunny)</em></div>
+                <div>3:13</div>
+            </div>
+            <div class="fila">
+                <div>09</div>
+                <div>Skinny Ape</div>
+                <div>4:41</div>
+            </div>
+            <div class="fila">
+                <div>10</div>
+                <div>Possession Island <em>(feat. Beck)</em></div>
+                <div>3:26</div>
+            </div>
+        </div>
+      </div>
+
+    </section>
+
+    <section id="song-machine" class="panel" data-color="machine">
+
+      <article class="info-album">
+        <figure class="img-wrapper">
+          <img src="img/02-Song-Machine.jpg" alt="Portada del álbum Song Machine" />
+          <a class="icono-spotify" href="https://open.spotify.com/album/5I9K0u8r52jp4Y2bF8mOaz?si=fTXK2SP6T4qvHv26aSoUdA" target="_blank"><svg width="100%" height="100%" viewBox="0 0 167.5 167.5">
+            <path fill="currentColor" d="M83.7 0C37.5 0 0 37.5 0 83.7c0 46.3 37.5 83.7 83.7 83.7 46.3 0 83.7-37.5 83.7-83.7S130 0 83.7 0zM122 120.8c-1.4 2.5-4.6 3.2-7 1.7-19.8-12-44.5-14.7-73.7-8-2.8.5-5.6-1.2-6.2-4-.2-2.8 1.5-5.6 4-6.2 32-7.3 59.6-4.2 81.6 9.3 2.6 1.5 3.4 4.7 1.8 7.2zM132.5 98c-2 3-6 4-9 2.2-22.5-14-56.8-18-83.4-9.8-3.2 1-7-1-8-4.3s1-7 4.6-8c30.4-9 68.2-4.5 94 11 3 2 4 6 2 9zm1-23.8c-27-16-71.6-17.5-97.4-9.7-4 1.3-8.2-1-9.5-5.2-1.3-4 1-8.5 5.2-9.8 29.6-9 78.8-7.2 109.8 11.2 3.7 2.2 5 7 2.7 10.7-2 3.8-7 5-10.6 2.8z"></path>
+          </svg></a>
+        </figure>
+        <div class="texto-album">
+          <a class="boton" href="#menu">Volver al menú</a>
+          <div class="titulo-album">
+            <h2>Song Machine, Season One</h2>
+            <h3>2020 | 17 canciones</h3>
+            <p><strong>Song Machine</strong> es un proyecto audiovisual de la banda virtual británica Gorillaz. Es una serie web musical que consta de una colección de singles y videoclips que son publicados de forma esporádica y se los presenta como "episodios" de la serie, donde en cada episodio se presenta un nuevo artista con el que se colaborará en la canción.</p>
+          </div>
+        </div>
+      </article>
+
+      <div class="canciones">
+        <div class="tabla-canciones">
+          <div class="fila">
+            <div>01</div>
+            <div>Strange Timez <em>(feat. Robert Smith)</em></div>
+            <div>3:47</div>
+        </div>
+        <div class="fila">
+            <div>02</div>
+            <div>The Valley of The Pagans <em>(feat. Beck)</em></div>
+            <div>3:00</div>
+        </div>
+        <div class="fila">
+            <div>03</div>
+            <div>The Lost Chord <em>(feat. Leee John)</em></div>
+            <div>4:03</div>
+        </div>
+        <div class="fila">
+            <div>04</div>
+            <div>Pac-Man <em>(feat. ScHoolboy Q)</em></div>
+            <div>3:12</div>
+        </div>
+        <div class="fila">
+            <div>05</div>
+            <div>Chalk Tablet Towers <em>(feat. St. Vincent)</em></div>
+            <div>3:02</div>
+        </div>
+        <div class="fila">
+            <div>06</div>
+            <div>The Pink Phantom <em>(feat. Elton John & 6LACK)</em></div>
+            <div>4:12</div>
+        </div>
+        <div class="fila">
+            <div>07</div>
+            <div>Aries <em>(feat. Peter Hook & Georgia)</em></div>
+            <div>4:13</div>
+        </div>
+        <div class="fila">
+            <div>08</div>
+            <div>Friday 13th <em>(feat. Octavian)</em></div>
+            <div>3:35</div>
+        </div>
+        <div class="fila">
+            <div>09</div>
+            <div>Dead Butterflies <em>(feat. Kano & Roxani Arias)</em></div>
+            <div>4:33</div>
+        </div>
+        <div class="fila">
+            <div>10</div>
+            <div>Désolé <em>(feat. Fatoumata Diawara)</em></div>
+            <div>5:33</div>
+        </div>
+        <div class="fila">
+            <div>11</div>
+            <div>Momentary Bliss <em>(feat. slowthai and Slaves)</em></div>
+            <div>3:41</div>
+        </div>
+        <div class="fila">
+            <div>12</div>
+            <div>Opium <em>(feat. EARTHGANG)</em></div>
+            <div>6:50</div>
+        </div>
+        <div class="fila">
+            <div>13</div>
+            <div>Simplicity <em>(feat. Joan As Police Woman)</em></div>
+            <div>2:44</div>
+        </div>
+        <div class="fila">
+            <div>14</div>
+            <div>Severed Head <em>(feat. GoldLink & Unknown Mortal Orchestra)</em></div>
+            <div>3:34</div>
+        </div>
+        <div class="fila">
+            <div>15</div>
+            <div>With Love To An Ex <em>(feat. Moonchild Sanelly)</em></div>
+            <div>3:01</div>
+        </div>
+        <div class="fila">
+            <div>16</div>
+            <div>MLS <em>(feat. JPEGMafia & CHAI)</em></div>
+            <div>3:12</div>
+        </div>
+        <div class="fila">
+            <div>17</div>
+            <div>How far? <em>(feat. Tony Allen & Skepta)</em></div>
+            <div>2:46</div>
+        </div>
+        </div>
+      </div>
+
+    </section>
+
+    <section id="the-now-now" class="panel" data-color="now">
+
+      <article class="info-album">
+        <figure class="img-wrapper">
+          <img src="img/03-The-Now-Now.jpg" alt="Portada del álbum The Now Now" />
+          <a class="icono-spotify" href="https://open.spotify.com/album/1amYhlukNF8WdaQC3gKkgL?si=w5GQa4nWSrSDBftujyotjg" target="_blank"><svg width="100%" height="100%" viewBox="0 0 167.5 167.5">
+            <path fill="currentColor" d="M83.7 0C37.5 0 0 37.5 0 83.7c0 46.3 37.5 83.7 83.7 83.7 46.3 0 83.7-37.5 83.7-83.7S130 0 83.7 0zM122 120.8c-1.4 2.5-4.6 3.2-7 1.7-19.8-12-44.5-14.7-73.7-8-2.8.5-5.6-1.2-6.2-4-.2-2.8 1.5-5.6 4-6.2 32-7.3 59.6-4.2 81.6 9.3 2.6 1.5 3.4 4.7 1.8 7.2zM132.5 98c-2 3-6 4-9 2.2-22.5-14-56.8-18-83.4-9.8-3.2 1-7-1-8-4.3s1-7 4.6-8c30.4-9 68.2-4.5 94 11 3 2 4 6 2 9zm1-23.8c-27-16-71.6-17.5-97.4-9.7-4 1.3-8.2-1-9.5-5.2-1.3-4 1-8.5 5.2-9.8 29.6-9 78.8-7.2 109.8 11.2 3.7 2.2 5 7 2.7 10.7-2 3.8-7 5-10.6 2.8z"></path>
+          </svg></a>
+        </figure>
+        <div class="texto-album">
+          <a class="boton" href="#menu">Volver al menú</a>
+          <div class="titulo-album">
+            <h2>The Now Now</h2>
+            <h3>2018 | 11 canciones</h3>
+            <p><strong>The Now Now</strong> es el sexto álbum de estudio de la banda virtual británica Gorillaz. Fue lanzado el 29 de junio de 2018, bajo el sello discográfico de Parlophone y Warner Bros.</p>
+          </div>
+        </div>
+      </article>
+
+      <div class="canciones">
+        <div class="tabla-canciones">
+          <div class="fila">
+              <div>01</div>
+              <div>Humility <em>(feat. George Benson)</em></div>
+              <div>3:17</div>
+          </div>
+          <div class="fila">
+              <div>02</div>
+              <div>Tranz</div>
+              <div>2:42</div>
+          </div>
+          <div class="fila">
+              <div>03</div>
+              <div>Hollywood <em>(feat. Snoop Dogg & Jamie Principle)</em></div>
+              <div>4:53</div>
+          </div>
+          <div class="fila">
+              <div>04</div>
+              <div>Kansas</div>
+              <div>4:08</div>
+          </div>
+          <div class="fila">
+              <div>05</div>
+              <div>Sorcererz</div>
+              <div>3:00</div>
+          </div>
+          <div class="fila">
+              <div>06</div>
+              <div>Idaho</div>
+              <div>3:42</div>
+          </div>
+          <div class="fila">
+              <div>07</div>
+              <div>Lake Zurich</div>
+              <div>4:13</div>
+          </div>
+          <div class="fila">
+              <div>08</div>
+              <div>Magic City</div>
+              <div>3:59</div>
+          </div>
+          <div class="fila">
+              <div>09</div>
+              <div>Fire Flies</div>
+              <div>3:53</div>
+          </div>
+          <div class="fila">
+              <div>10</div>
+              <div>One Percent</div>
+              <div>2:21</div>
+          </div>
+          <div class="fila">
+              <div>11</div>
+              <div>Souk Eye</div>
+              <div>4:34</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="humanz" class="panel" data-color="humanz">
+
+      <article class="info-album">
+        <figure class="img-wrapper">
+          <img src="img/04-Humanz.jpg" alt="Portada del álbum Humanz" />
+          <a class="icono-spotify" href="https://open.spotify.com/album/0NvirtaDCaZU5PAW1O5FDE?si=zKTmlxJITb2uSYOX3_7X2A" target="_blank"><svg width="100%" height="100%" viewBox="0 0 167.5 167.5">
+            <path fill="currentColor" d="M83.7 0C37.5 0 0 37.5 0 83.7c0 46.3 37.5 83.7 83.7 83.7 46.3 0 83.7-37.5 83.7-83.7S130 0 83.7 0zM122 120.8c-1.4 2.5-4.6 3.2-7 1.7-19.8-12-44.5-14.7-73.7-8-2.8.5-5.6-1.2-6.2-4-.2-2.8 1.5-5.6 4-6.2 32-7.3 59.6-4.2 81.6 9.3 2.6 1.5 3.4 4.7 1.8 7.2zM132.5 98c-2 3-6 4-9 2.2-22.5-14-56.8-18-83.4-9.8-3.2 1-7-1-8-4.3s1-7 4.6-8c30.4-9 68.2-4.5 94 11 3 2 4 6 2 9zm1-23.8c-27-16-71.6-17.5-97.4-9.7-4 1.3-8.2-1-9.5-5.2-1.3-4 1-8.5 5.2-9.8 29.6-9 78.8-7.2 109.8 11.2 3.7 2.2 5 7 2.7 10.7-2 3.8-7 5-10.6 2.8z"></path>
+          </svg></a>
+        </figure>
+        <div class="texto-album">
+          <a class="boton" href="#menu">Volver al menú</a>
+          <div class="titulo-album">
+            <h2>Humanz</h2>
+            <h3>2017 | 20 canciones</h3>
+            <p><strong>Humanz</strong> es el quinto álbum de estudio de banda virtual Gorillaz. Fue lanzado el 28 de abril de 2017 en el Reino Unido por Parlophone y en los Estados Unidos por Warner Bros. Records.</p>
+          </div>
+        </div>
+      </article>
+
+      <div class="canciones">
+        <div class="tabla-canciones">
+          <div class="fila">
+              <div>01</div>
+              <div>Intro: I Switched My Robot Off</div>
+              <div>0:24</div>
+          </div>
+          <div class="fila">
+              <div>02</div>
+              <div>Ascension <em>(feat. Vince Staples)</em></div>
+              <div>2:35</div>
+          </div>
+          <div class="fila">
+              <div>03</div>
+              <div>Strobelite <em>(feat. Peven Everett)</em></div>
+              <div>4:32</div>
+          </div>
+          <div class="fila">
+              <div>04</div>
+              <div>Saturnz Barz <em>(feat. Popcaan)</em></div>
+              <div>3:01</div>
+          </div>
+          <div class="fila">
+              <div>05</div>
+              <div>Momentz <em>(feat. De La Soul)</em></div>
+              <div>3:16</div>
+          </div>
+          <div class="fila">
+              <div>06</div>
+              <div>Interlude: The Non-Conformist Oath</div>
+              <div>0:21</div>
+          </div>
+          <div class="fila">
+              <div>07</div>
+              <div>Submission <em>(feat. Danny Brown & Kelela)</em></div>
+              <div>3:21</div>
+          </div>
+          <div class="fila">
+              <div>08</div>
+              <div>Charger <em>(feat. Grace Jones)</em></div>
+              <div>3:34</div>
+          </div>
+          <div class="fila">
+              <div>09</div>
+              <div>Interlude: Elevator Going Up</div>
+              <div>0:04</div>
+          </div>
+          <div class="fila">
+              <div>10</div>
+              <div>Andromeda <em>(feat. D.R.A.M.)</em></div>
+              <div>3:17</div>
+          </div>
+          <div class="fila">
+              <div>11</div>
+              <div>Busted and Blue</div>
+              <div>4:37</div>
+          </div>
+          <div class="fila">
+              <div>12</div>
+              <div>Interlude: Talk Radio</div>
+              <div>0:19</div>
+          </div>
+          <div class="fila">
+              <div>13</div>
+              <div>Carnival <em>(feat. Anthony Hamilton)</em></div>
+              <div>2:15</div>
+          </div>
+          <div class="fila">
+              <div>14</div>
+              <div>Let Me Out <em>(feat. Mavis Staples y Pusha T)</em></div>
+              <div>4:37</div>
+          </div>
+          <div class="fila">
+              <div>15</div>
+              <div>Interlude: Penthouse</div>
+              <div>0:11</div>
+          </div>
+          <div class="fila">
+              <div>16</div>
+              <div>Sex Murder Party <em>(feat. Jamie Principle y Zebra Katz)</em></div>
+              <div>4:19</div>
+          </div>
+          <div class="fila">
+              <div>17</div>
+              <div>She's My Collar <em>(feat. Kali Uchis)</em></div>
+              <div>3:29</div>
+          </div>
+          <div class="fila">
+              <div>18</div>
+              <div>Interlude: The Elephant</div>
+              <div>0:11</div>
+          </div>
+          <div class="fila">
+              <div>19</div>
+              <div>Hallelujah Money <em>(feat. Benjamin Clementine)</em></div>
+              <div>4:23</div>
+          </div>
+          <div class="fila">
+              <div>20</div>
+              <div>We Got The Power <em>(feat. Jehnny Beth)</em></div>
+              <div>2:17</div>
+          </div>
+        </div>      
+      </div>
+
+    </section>
+
+    <section id="plastic-beach" class="panel" data-color="plastic">
+
+      <figure class="sticker-wrapper">
+        <img src="img/sticker-3.png" alt="Sticker del álbum Plastic Beach" />
+      </figure>
+
+      <article class="info-album">
+        <figure class="img-wrapper">
+          <img src="img/05-Plastic-Beach.jpg" alt="Portada del álbum Plastic Beach" />
+          <a class="icono-spotify" href="https://open.spotify.com/album/2dIGnmEIy1WZIcZCFSj6i8?si=cQkxxVBLQWy0usidjklsyg" target="_blank"><svg width="100%" height="100%" viewBox="0 0 167.5 167.5">
+            <path fill="currentColor" d="M83.7 0C37.5 0 0 37.5 0 83.7c0 46.3 37.5 83.7 83.7 83.7 46.3 0 83.7-37.5 83.7-83.7S130 0 83.7 0zM122 120.8c-1.4 2.5-4.6 3.2-7 1.7-19.8-12-44.5-14.7-73.7-8-2.8.5-5.6-1.2-6.2-4-.2-2.8 1.5-5.6 4-6.2 32-7.3 59.6-4.2 81.6 9.3 2.6 1.5 3.4 4.7 1.8 7.2zM132.5 98c-2 3-6 4-9 2.2-22.5-14-56.8-18-83.4-9.8-3.2 1-7-1-8-4.3s1-7 4.6-8c30.4-9 68.2-4.5 94 11 3 2 4 6 2 9zm1-23.8c-27-16-71.6-17.5-97.4-9.7-4 1.3-8.2-1-9.5-5.2-1.3-4 1-8.5 5.2-9.8 29.6-9 78.8-7.2 109.8 11.2 3.7 2.2 5 7 2.7 10.7-2 3.8-7 5-10.6 2.8z"></path>
+          </svg></a>
+        </figure>
+        <div class="texto-album">
+          <a class="boton" href="#menu">Volver al menú</a>
+          <div class="titulo-album">
+            <h2>Plastic Beach</h2>
+            <h3>2010 | 16 canciones</h3>
+            <p><strong>Plastic Beach</strong> es el tercer álbum de estudio de Gorillaz. Con un estilo menos oscuro que el segundo álbum de Gorillaz Demon Days, Plastic Beach reúne artistas de todos los estilos desde el punk rock hasta el rap.</p>
+          </div>
+        </div>
+      </article>
+
+      <div class="canciones">
+        <div class="tabla-canciones">
+          <div class="fila">
+              <div>01</div>
+              <div>Orchestral Intro <em>(feat. Sinfonia ViVA)</em></div>
+              <div>1:09</div>
+          </div>
+          <div class="fila">
+              <div>02</div>
+              <div>Welcome to the World of the Plastic Beach <em>(feat. Snoop Dogg and Hypnotic Brass Ensemble)</em></div>
+              <div>3:34</div>
+          </div>
+          <div class="fila">
+              <div>03</div>
+              <div>White Flag <em>(feat. Kano, Bashy and The Lebanese National Orchestra for Oriental Arabic Music)</em></div>
+              <div>3:42</div>
+          </div>
+          <div class="fila">
+              <div>04</div>
+              <div>Rhinestone Eyes</div>
+              <div>3:19</div>
+          </div>
+          <div class="fila">
+              <div>05</div>
+              <div>Stylo <em>(feat. Mos Def and Bobby Womack)</em></div>
+              <div>4:30</div>
+          </div>
+          <div class="fila">
+              <div>06</div>
+              <div>Superfast Jellyfish <em>(feat. Gruff Rhys and De La Soul)</em></div>
+              <div>2:54</div>
+          </div>
+          <div class="fila">
+              <div>07</div>
+              <div>Empire Ants <em>(feat. Little Dragon)</em></div>
+              <div>4:42</div>
+          </div>
+          <div class="fila">
+              <div>08</div>
+              <div>Glitter Freeze <em>(feat. Mark E Smith)</em></div>
+              <div>4:01</div>
+          </div>
+          <div class="fila">
+              <div>09</div>
+              <div>Some Kind of Nature <em>(feat. Lou Reed)</em></div>
+              <div>2:59</div>
+          </div>
+          <div class="fila">
+              <div>10</div>
+              <div>On Melancholy Hill</div>
+              <div>3:52</div>
+          </div>
+          <div class="fila">
+              <div>11</div>
+              <div>Broken</div>
+              <div>3:16</div>
+          </div>
+          <div class="fila">
+              <div>12</div>
+              <div>Sweepstakes <em>(feat. Mos Def and Hypnotic Brass Ensemble)</em></div>
+              <div>5:20</div>
+          </div>
+          <div class="fila">
+              <div>13</div>
+              <div>Plastic Beach <em>(feat. Mick Jones and Paul Simonon)</em></div>
+              <div>3:47</div>
+          </div>
+          <div class="fila">
+              <div>14</div>
+              <div>To Binge <em>(feat. Little Dragon)</em></div>
+              <div>3:55</div>
+          </div>
+          <div class="fila">
+              <div>15</div>
+              <div>Cloud of Unknowing <em>(feat. Bobby Womack and Sinfonia ViVA)</em></div>
+              <div>3:05</div>
+          </div>
+          <div class="fila">
+              <div>16</div>
+              <div>Pirate Jet</div>
+              <div>2:32</div>
+          </div>
+        </div>      
+      </div>
+
+    </section>
+
+    <section id="the-fall" class="panel" data-color="fall">
+
+      <article class="info-album">
+        <figure class="img-wrapper">
+          <img src="img/06-The-Fall.jpg" alt="Portada del álbum The Fall" />
+          <a class="icono-spotify" href="https://open.spotify.com/album/5jJGGsAztgUEXUHHZ2zrah?si=ITnS5DfgQ9GnE9wMu9zdeA" target="_blank"><svg width="100%" height="100%" viewBox="0 0 167.5 167.5">
+            <path fill="currentColor" d="M83.7 0C37.5 0 0 37.5 0 83.7c0 46.3 37.5 83.7 83.7 83.7 46.3 0 83.7-37.5 83.7-83.7S130 0 83.7 0zM122 120.8c-1.4 2.5-4.6 3.2-7 1.7-19.8-12-44.5-14.7-73.7-8-2.8.5-5.6-1.2-6.2-4-.2-2.8 1.5-5.6 4-6.2 32-7.3 59.6-4.2 81.6 9.3 2.6 1.5 3.4 4.7 1.8 7.2zM132.5 98c-2 3-6 4-9 2.2-22.5-14-56.8-18-83.4-9.8-3.2 1-7-1-8-4.3s1-7 4.6-8c30.4-9 68.2-4.5 94 11 3 2 4 6 2 9zm1-23.8c-27-16-71.6-17.5-97.4-9.7-4 1.3-8.2-1-9.5-5.2-1.3-4 1-8.5 5.2-9.8 29.6-9 78.8-7.2 109.8 11.2 3.7 2.2 5 7 2.7 10.7-2 3.8-7 5-10.6 2.8z"></path>
+          </svg></a>
+        </figure>
+        <div class="texto-album">
+          <a class="boton" href="#menu">Volver al menú</a>
+          <div class="titulo-album">
+            <h2>The Fall</h2>
+            <h3>2010 | 15 canciones</h3>
+            <p><strong>The Fall</strong> es el cuarto álbum de estudio lanzado por la banda virtual británica Gorillaz, con un estilo más electrónico y más oscuro. El álbum fue oficialmente lanzado el 20 de diciembre de 20101​ y poco después lanzado el 25 de diciembre de 2010 como una descarga gratis en el sitio web de Gorillaz.</p>
+          </div>
+        </div>
+      </article>
+
+      <div class="canciones">
+        <div class="tabla-canciones">
+          <div class="fila">
+              <div>01</div>
+              <div>Phoner to Arizona</div>
+              <div>4:14</div>
+          </div>
+          <div class="fila">
+              <div>02</div>
+              <div>Revolving Doors</div>
+              <div>3:26</div>
+          </div>
+          <div class="fila">
+              <div>03</div>
+              <div>HillBilly Man</div>
+              <div>3:50</div>
+          </div>
+          <div class="fila">
+              <div>04</div>
+              <div>Detroit</div>
+              <div>2:03</div>
+          </div>
+          <div class="fila">
+              <div>05</div>
+              <div>Shy-town</div>
+              <div>2:54</div>
+          </div>
+          <div class="fila">
+              <div>06</div>
+              <div>Little Pink Plastic Bags</div>
+              <div>3:09</div>
+          </div>
+          <div class="fila">
+              <div>07</div>
+              <div>The Joplin Spider</div>
+              <div>3:22</div>
+          </div>
+          <div class="fila">
+              <div>08</div>
+              <div>The Parish of Space Dust</div>
+              <div>2:25</div>
+          </div>
+          <div class="fila">
+              <div>09</div>
+              <div>The Snake in Dallas</div>
+              <div>2:11</div>
+          </div>
+          <div class="fila">
+              <div>10</div>
+              <div>Amarillo</div>
+              <div>3:24</div>
+          </div>
+          <div class="fila">
+              <div>11</div>
+              <div>The Speak It Mountains</div>
+              <div>2:14</div>
+          </div>
+          <div class="fila">
+              <div>12</div>
+              <div>Aspen Forest</div>
+              <div>2:50</div>
+          </div>
+          <div class="fila">
+              <div>13</div>
+              <div>Bobby in Phoenix <em>(feat. Bobby Womack)</em></div>
+              <div>3:16</div>
+          </div>
+          <div class="fila">
+              <div>14</div>
+              <div>California & The Slipping of the Sun</div>
+              <div>3:24</div>
+          </div>
+          <div class="fila">
+              <div>15</div>
+              <div>Seattle Yodel</div>
+              <div>0:38</div>
+          </div>
+        </div>      
+      </div>
+
+    </section>
+
+    <section id="d-sides" class="panel" data-color="sides">
+
+      <article class="info-album">
+        <figure class="img-wrapper">
+          <img src="img/07-D-Sides.jpg" alt="Portada del álbum D-Sides" />
+          <a class="icono-spotify" href="https://open.spotify.com/album/0pdYY0CHFRVFLBZEPEKTMZ?si=JBCBgJ5TSLakFGAX7Cc08Q" target="_blank"><svg width="100%" height="100%" viewBox="0 0 167.5 167.5">
+            <path fill="currentColor" d="M83.7 0C37.5 0 0 37.5 0 83.7c0 46.3 37.5 83.7 83.7 83.7 46.3 0 83.7-37.5 83.7-83.7S130 0 83.7 0zM122 120.8c-1.4 2.5-4.6 3.2-7 1.7-19.8-12-44.5-14.7-73.7-8-2.8.5-5.6-1.2-6.2-4-.2-2.8 1.5-5.6 4-6.2 32-7.3 59.6-4.2 81.6 9.3 2.6 1.5 3.4 4.7 1.8 7.2zM132.5 98c-2 3-6 4-9 2.2-22.5-14-56.8-18-83.4-9.8-3.2 1-7-1-8-4.3s1-7 4.6-8c30.4-9 68.2-4.5 94 11 3 2 4 6 2 9zm1-23.8c-27-16-71.6-17.5-97.4-9.7-4 1.3-8.2-1-9.5-5.2-1.3-4 1-8.5 5.2-9.8 29.6-9 78.8-7.2 109.8 11.2 3.7 2.2 5 7 2.7 10.7-2 3.8-7 5-10.6 2.8z"></path>
+          </svg></a>
+        </figure>
+        <div class="texto-album">
+          <a class="boton" href="#menu">Volver al menú</a>
+          <div class="titulo-album">
+            <h2>D-Sides</h2>
+            <h3>2007 | 13 canciones</h3>
+            <p><strong>D-Sides</strong> es una compilación del disco Demon Days (2005) de Gorillaz. El primer disco contiene lados b y el segundo disco contiene remixes.</p>
+          </div>
+        </div>
+      </article>
+
+      <div class="canciones">
+        <div class="tabla-canciones">
+          <div class="fila">
+              <div>01</div>
+              <div>68 State</div>
+              <div>4:48</div>
+          </div>
+          <div class="fila">
+              <div>02</div>
+              <div>People <em>(feat. James Murphy)</em></div>
+              <div>3:28</div>
+          </div>
+          <div class="fila">
+              <div>03</div>
+              <div>Hongkongaton <em>(feat. D-12)</em></div>
+              <div>3:35</div>
+          </div>
+          <div class="fila">
+              <div>04</div>
+              <div>We Are Happy Landfill</div>
+              <div>3:39</div>
+          </div>
+          <div class="fila">
+              <div>05</div>
+              <div>Hong Kong <em>(feat. Bad Lieutenant)</em></div>
+              <div>7:13</div>
+          </div>
+          <div class="fila">
+              <div>06</div>
+              <div>Highway (Under Construction)</div>
+              <div>4:19</div>
+          </div>
+          <div class="fila">
+              <div>07</div>
+              <div>Rockit</div>
+              <div>3:33</div>
+          </div>
+          <div class="fila">
+              <div>08</div>
+              <div>Bill Murray</div>
+              <div>3:52</div>
+          </div>
+          <div class="fila">
+              <div>09</div>
+              <div>The Swagga</div>
+              <div>4:59</div>
+          </div>
+          <div class="fila">
+              <div>10</div>
+              <div>Murdoc Is God</div>
+              <div>2:27</div>
+          </div>
+          <div class="fila">
+              <div>11</div>
+              <div>Spitting Out the Demons</div>
+              <div>5:10</div>
+          </div>
+          <div class="fila">
+              <div>12</div>
+              <div>Don't Get Lost in Heaven - Original Demo</div>
+              <div>02:21</div>
+          </div>
+          <div class="fila">
+              <div>13</div>
+              <div>Stop the Dams</div>
+              <div>5:38</div>
+          </div>
+        </div>      
+      </div>
+
+    </section>
+
+    <section id="demon-days" class="panel" data-color="demon">
+
+      <figure class="sticker-wrapper">
+        <img src="img/sticker-1.png" alt="Sticker del álbum Demon Days" />
+      </figure>
+
+      <article class="info-album">
+        <figure class="img-wrapper">
+          <img src="img/08-Demon-Days.jpg" alt="Portada del álbum Demon Days" />
+          <a class="icono-spotify" href="https://open.spotify.com/album/0bUTHlWbkSQysoM3VsWldT?si=FkOViQDWQXGSbGLPKsLd9w" target="_blank"><svg width="100%" height="100%" viewBox="0 0 167.5 167.5">
+            <path fill="currentColor" d="M83.7 0C37.5 0 0 37.5 0 83.7c0 46.3 37.5 83.7 83.7 83.7 46.3 0 83.7-37.5 83.7-83.7S130 0 83.7 0zM122 120.8c-1.4 2.5-4.6 3.2-7 1.7-19.8-12-44.5-14.7-73.7-8-2.8.5-5.6-1.2-6.2-4-.2-2.8 1.5-5.6 4-6.2 32-7.3 59.6-4.2 81.6 9.3 2.6 1.5 3.4 4.7 1.8 7.2zM132.5 98c-2 3-6 4-9 2.2-22.5-14-56.8-18-83.4-9.8-3.2 1-7-1-8-4.3s1-7 4.6-8c30.4-9 68.2-4.5 94 11 3 2 4 6 2 9zm1-23.8c-27-16-71.6-17.5-97.4-9.7-4 1.3-8.2-1-9.5-5.2-1.3-4 1-8.5 5.2-9.8 29.6-9 78.8-7.2 109.8 11.2 3.7 2.2 5 7 2.7 10.7-2 3.8-7 5-10.6 2.8z"></path>
+          </svg></a>
+        </figure>
+        <div class="texto-album">
+          <a class="boton" href="#menu">Volver al menú</a>
+          <div class="titulo-album">
+            <h2>Demon Days</h2>
+            <h3>2005 | 15 canciones</h3>
+            <p><strong>Demon Days</strong> es el segundo álbum de la banda británica Gorillaz, lanzado el 11 de mayo de 2005 en Japón y el 23 de mayo del mismo año en el Reino Unido y Estados Unidos, fue grabado en 2004 en Kong Studios.</p>
+          </div>
+        </div>
+      </article>
+
+      <div class="canciones">
+        <div class="tabla-canciones">
+          <div class="fila">
+              <div>01</div>
+              <div>Intro</div>
+              <div>1:03</div>
+          </div>
+          <div class="fila">
+              <div>02</div>
+              <div>Last Living Souls</div>
+              <div>3:10</div>
+          </div>
+          <div class="fila">
+              <div>03</div>
+              <div>Kids With Guns <em>(feat. Neneh Cherry)</em></div>
+              <div>3:45</div>
+          </div>
+          <div class="fila">
+              <div>04</div>
+              <div>O Green World</div>
+              <div>4:31</div>
+          </div>
+          <div class="fila">
+              <div>05</div>
+              <div>Dirty Harry <em>(feat. Bootie Brown)</em></div>
+              <div>3:43</div>
+          </div>
+          <div class="fila">
+              <div>06</div>
+              <div>Feel Good Inc. <em>(feat. De La Soul)</em></div>
+              <div>3:41</div>
+          </div>
+          <div class="fila">
+              <div>07</div>
+              <div>El Mañana</div>
+              <div>3:50</div>
+          </div>
+          <div class="fila">
+              <div>08</div>
+              <div>Every Planet We Reach Is Dead</div>
+              <div>4:53</div>
+          </div>
+          <div class="fila">
+              <div>09</div>
+              <div>November Has Come <em>(feat. MF Doom)</em></div>
+              <div>2:41</div>
+          </div>
+          <div class="fila">
+              <div>10</div>
+              <div>All Alone <em>(feat. Roots Manuva)</em></div>
+              <div>3:30</div>
+          </div>
+          <div class="fila">
+              <div>11</div>
+              <div>White Light</div>
+              <div>2:08</div>
+          </div>
+          <div class="fila">
+              <div>12</div>
+              <div>DARE <em>(feat. Shaun Ryder)</em></div>
+              <div>4:04</div>
+          </div>
+          <div class="fila">
+              <div>13</div>
+              <div>Fire Coming Out of the Monkey's Head</div>
+              <div>3:16</div>
+          </div>
+          <div class="fila">
+              <div>14</div>
+              <div>Don't Get Lost in Heaven</div>
+              <div>2:00</div>
+          </div>
+          <div class="fila">
+              <div>15</div>
+              <div>Demon Days</div>
+              <div>4:29</div>
+          </div>
+        </div>      
+      </div>
+
+    </section>
+
+    <section id="laika-come-home" class="panel" data-color="laika">
+
+      <article class="info-album">
+        <figure class="img-wrapper">
+          <img src="img/09-Laika-Come-Home.jpg" alt="Portada del álbum Laika Come Home" />
+          <a class="icono-spotify" href="https://open.spotify.com/album/0yPLNfI8WPJWFoJugr0KAv?si=kxsofjWKSOuNP3CgXWNbig" target="_blank"><svg width="100%" height="100%" viewBox="0 0 167.5 167.5">
+            <path fill="currentColor" d="M83.7 0C37.5 0 0 37.5 0 83.7c0 46.3 37.5 83.7 83.7 83.7 46.3 0 83.7-37.5 83.7-83.7S130 0 83.7 0zM122 120.8c-1.4 2.5-4.6 3.2-7 1.7-19.8-12-44.5-14.7-73.7-8-2.8.5-5.6-1.2-6.2-4-.2-2.8 1.5-5.6 4-6.2 32-7.3 59.6-4.2 81.6 9.3 2.6 1.5 3.4 4.7 1.8 7.2zM132.5 98c-2 3-6 4-9 2.2-22.5-14-56.8-18-83.4-9.8-3.2 1-7-1-8-4.3s1-7 4.6-8c30.4-9 68.2-4.5 94 11 3 2 4 6 2 9zm1-23.8c-27-16-71.6-17.5-97.4-9.7-4 1.3-8.2-1-9.5-5.2-1.3-4 1-8.5 5.2-9.8 29.6-9 78.8-7.2 109.8 11.2 3.7 2.2 5 7 2.7 10.7-2 3.8-7 5-10.6 2.8z"></path>
+          </svg></a>
+        </figure>
+        <div class="texto-album">
+          <a class="boton" href="#menu">Volver al menú</a>
+          <div class="titulo-album">
+            <h2>Laika Come Home</h2>
+            <h3>2002 | 12 canciones</h3>
+            <p><strong>Laika Come Home</strong> es una compilación y reedición de los mejores temas del disco Gorillaz (2001), del grupo homónimo realizado por Spacemonkeyz.</p>
+          </div>
+        </div>
+      </article>
+
+      <div class="canciones">
+        <div class="tabla-canciones">
+          <div class="fila">
+              <div>01</div>
+              <div>Jungle Fresh</div>
+              <div>5:28</div>
+          </div>
+          <div class="fila">
+              <div>02</div>
+              <div>Strictly Rubbadub</div>
+              <div>3:41</div>
+          </div>
+          <div class="fila">
+              <div>03</div>
+              <div>Bañana Baby</div>
+              <div>5:29</div>
+          </div>
+          <div class="fila">
+              <div>04</div>
+              <div>Monkey Racket</div>
+              <div>5:57</div>
+          </div>
+          <div class="fila">
+              <div>05</div>
+              <div>De-Punked</div>
+              <div>5:20</div>
+          </div>
+          <div class="fila">
+              <div>06</div>
+              <div>P45</div>
+              <div>4:26</div>
+          </div>
+          <div class="fila">
+              <div>07</div>
+              <div>Dub 09</div>
+              <div>5:17</div>
+          </div>
+          <div class="fila">
+              <div>08</div>
+              <div>Croocked Dub</div>
+              <div>5:31</div>
+          </div>
+          <div class="fila">
+              <div>09</div>
+              <div>Mutant Genius</div>
+              <div>5:02</div>
+          </div>
+          <div class="fila">
+              <div>10</div>
+              <div>Come Again</div>
+              <div>6:04</div>
+          </div>
+          <div class="fila">
+              <div>11</div>
+              <div>A Fistful of Peanuts</div>
+              <div>5:53</div>
+          </div>
+          <div class="fila">
+              <div>12</div>
+              <div>Lil' Dub Chefin</div>
+              <div>18:01</div>
+          </div>
+        </div>      
+      </div>
+
+    </section>
+
+    <section id="gorillaz" class="panel" data-color="gorillaz">
+
+      <article class="info-album">
+        <figure class="img-wrapper">
+          <img src="img/10-Gorillaz.jpg" alt="Portada del álbum Gorillaz" />
+          <a class="icono-spotify" href="https://open.spotify.com/album/4tUxQkrduOE8sfgwJ5BI2F?si=B42fxTGMSpCqukbK0r28Rg" target="_blank"><svg width="100%" height="100%" viewBox="0 0 167.5 167.5">
+            <path fill="currentColor" d="M83.7 0C37.5 0 0 37.5 0 83.7c0 46.3 37.5 83.7 83.7 83.7 46.3 0 83.7-37.5 83.7-83.7S130 0 83.7 0zM122 120.8c-1.4 2.5-4.6 3.2-7 1.7-19.8-12-44.5-14.7-73.7-8-2.8.5-5.6-1.2-6.2-4-.2-2.8 1.5-5.6 4-6.2 32-7.3 59.6-4.2 81.6 9.3 2.6 1.5 3.4 4.7 1.8 7.2zM132.5 98c-2 3-6 4-9 2.2-22.5-14-56.8-18-83.4-9.8-3.2 1-7-1-8-4.3s1-7 4.6-8c30.4-9 68.2-4.5 94 11 3 2 4 6 2 9zm1-23.8c-27-16-71.6-17.5-97.4-9.7-4 1.3-8.2-1-9.5-5.2-1.3-4 1-8.5 5.2-9.8 29.6-9 78.8-7.2 109.8 11.2 3.7 2.2 5 7 2.7 10.7-2 3.8-7 5-10.6 2.8z"></path>
+          </svg></a>
+        </figure>
+        <div class="texto-album">
+          <a class="boton" href="#menu">Volver al menú</a>
+          <div class="titulo-album">
+            <h2>Gorillaz</h2>
+            <h3>2001 | 15 canciones</h3>
+            <p><strong>Gorillaz</strong> es el álbum debut de la banda virtual británica homónima. Sería lanzado por Parlophone el 26 de marzo de 2001 en el Reino Unido.</p>
+          </div>
+        </div>
+      </article>
+
+      <div class="canciones">
+        <div class="tabla-canciones">
+          <div class="fila">
+              <div>01</div>
+              <div>Re-Hash</div>
+              <div>3:38</div>
+          </div>
+          <div class="fila">
+              <div>02</div>
+              <div>5/4</div>
+              <div>2:39</div>
+          </div>
+          <div class="fila">
+              <div>03</div>
+              <div>Tomorrow Comes Today</div>
+              <div>3:12</div>
+          </div>
+          <div class="fila">
+              <div>04</div>
+              <div>New Genious (Brother)</div>
+              <div>3:57</div>
+          </div>
+          <div class="fila">
+              <div>05</div>
+              <div>Clint Eastwood</div>
+              <div>5:40</div>
+          </div>
+          <div class="fila">
+              <div>06</div>
+              <div>Man Research (Clapper)</div>
+              <div>4:32</div>
+          </div>
+          <div class="fila">
+              <div>07</div>
+              <div>Punk</div>
+              <div>1:38</div>
+          </div>
+          <div class="fila">
+              <div>08</div>
+              <div>Sound Check (Gravity)</div>
+              <div>4:40</div>
+          </div>
+          <div class="fila">
+              <div>09</div>
+              <div>Double Bass</div>
+              <div>4:44</div>
+          </div>
+          <div class="fila">
+              <div>10</div>
+              <div>Rock the House</div>
+              <div>4:09</div>
+          </div>
+          <div class="fila">
+              <div>11</div>
+              <div>19-2000</div>
+              <div>3:27</div>
+          </div>
+          <div class="fila">
+              <div>12</div>
+              <div>Latin Simone (Que Pasa Contigo)</div>
+              <div>3:36</div>
+          </div>
+          <div class="fila">
+              <div>13</div>
+              <div>Starshine</div>
+              <div>3:31</div>
+          </div>
+          <div class="fila">
+              <div>14</div>
+              <div>Slow Country</div>
+              <div>3:35</div>
+          </div>
+          <div class="fila">
+              <div>15</div>
+              <div>M1 A1</div>
+              <div>3:54</div>
+          </div>
+        </div>      
+      </div>
+
+    </section>
+
+    <!-- Enlace al código de JavaScript -->
+    <script src="js/img-hover.js"></script>
+    <script src="js/tabla-desplegable.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="js/color-fondo.js"></script>
+
+  </body>
+</html>

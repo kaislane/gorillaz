@@ -1,0 +1,348 @@
+/* SECCIONES DE ÁLBUMES */
+
+.panel {
+    text-align: center;
+    padding: 30px 0 0;
+    position: relative;
+}
+
+@media (min-width: 768px) {
+    .panel {
+        padding: 40px 0 0;
+    }
+}
+
+@media (min-width: 1440px) {
+    .panel {
+        padding: 50px 0 0;
+    }
+}
+
+/* STICKER SOBRE EL CONTENIDO */
+
+.sticker-wrapper img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    object-position: center;
+}
+
+.sticker-wrapper {
+    position: absolute;
+    z-index: 20;
+    filter: drop-shadow(0px 0px 0.5rem var(--negro));
+    visibility: hidden;
+    /* No se muestran ni en móvil ni en tablet */
+
+    /* LEVITAR */
+    animation: levitar 1.5s ease-in-out infinite alternate;
+}
+
+/* ANIMACIÓN DE LEVITAR */
+
+@keyframes levitar {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-20px);
+    }
+}
+
+#cracker-island .sticker-wrapper {
+    width: 350px;
+    top: 40%;
+    right: 15%;
+}
+
+#plastic-beach .sticker-wrapper {
+    width: 400px;
+    top: 70%;
+    right: 15%;
+}
+
+#demon-days .sticker-wrapper {
+    width: 400px;
+    top: 40%;
+    right: 35%;
+}
+
+@media (min-width: 1440px) {
+    .sticker-wrapper {
+        visibility: visible;
+    }
+}
+
+/* CARÁTULA + INFORMACIÓN DEL ÁLBUM */
+
+.info-album {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0px 30px 30px;
+    gap: 15px;
+}
+
+@media (min-width: 768px) {
+    .info-album {
+        grid-template-columns: 200px 1fr;
+        margin: 0px 40px 40px;
+        gap: 20px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .info-album {
+        grid-template-columns: 400px 50vw;
+        margin: 0px 50px 50px;
+        gap: 25px;
+    }
+}
+
+.img-wrapper {
+    position: relative;
+}
+
+.img-wrapper:hover img {
+    mix-blend-mode: luminosity;
+
+    /* HELP! No consigo que este efecto se aplique con suavidad */
+}
+
+.img-wrapper img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 2rem rgba(5, 6, 8, 0.7);
+    /* Me aseguro de que las imágenes siempre se vean cuadradas 😉 */
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+
+.titulo-album {
+    text-align: left;
+    align-self: end;
+
+    h2 {
+        font-size: 4rem;
+        font-weight: 700;
+        line-height: 0.9;
+        margin-bottom: 10px;
+    }
+
+    h3 {
+        font-size: 1rem;
+        font-weight: 500;
+    }
+
+    p {
+        padding: 15px 0px 0px;
+    }
+}
+
+@media (min-width: 768px) {
+    .titulo-album h2 {
+        font-size: 5rem;
+    }
+
+    .titulo-album p {
+        padding: 20px 0px 0px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .titulo-album h2 {
+        font-size: 6rem;
+    }
+
+    .titulo-album p {
+        padding: 25px 0px 0px;
+    }
+}
+
+.texto-album {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.boton {
+    color: var(--negro);
+    background-color: var(--blanco);
+    font-weight: 700;
+    width: fit-content;
+    padding: 15px 25px;
+    margin-bottom: 30px;
+    border-radius: 100px;
+    display: block;
+
+    &:hover {
+        color: var(--blanco);
+        background-color: var(--negro);
+    }
+}
+
+@media (min-width: 768px) {
+    .boton {
+        margin-bottom: 40px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .boton {
+        margin-bottom: 50px;
+    }
+}
+
+/* HOVER CON BOTÓN A SPOTIFY */
+
+.icono-spotify {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /* Centra el SVG en relación al contenedor */
+    transform: translate(-50%, -50%);
+    /* El botón está oculto por defecto */
+    opacity: 0;
+    transition: opacity 0.3s ease;
+
+    svg {
+        width: 75px;
+        color: var(--blanco);
+        filter: drop-shadow(0px 0px 1rem var(--negro));
+    }
+}
+
+@media (min-width: 768px) {
+    .icono-spotify svg {
+        width: 100px;
+    }
+}
+
+.img-wrapper:hover .icono-spotify {
+    /* Muestra el botón cuando se hace hover sobre la imagen */
+    opacity: 1;
+}
+
+/* TABLA DE CANCIONES, AHORA CON FLEXBOX */
+
+.canciones {
+    padding: 15px 30px;
+    background: linear-gradient(0deg, rgba(5, 6, 8, 1) 0%, rgba(5, 6, 8, 0.2) 100%);
+}
+
+@media (min-width: 768px) {
+    .canciones {
+        padding: 20px 40px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .canciones {
+        padding: 25px 50px;
+    }
+}
+
+.tabla-canciones {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-weight: 300;
+}
+
+.fila {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0px;
+}
+
+.fila:hover {
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+.fila>div:first-child {
+    width: 75px;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .fila>div:first-child {
+        width: 100px;
+    }
+}
+
+.fila>div:nth-child(2) {
+    width: 100%;
+    text-align: left;
+    font-size: 1.5rem;
+    font-weight: 500;
+
+    em {
+        font-weight: 300;
+        font-style: normal;
+    }
+}
+
+@media (min-width: 768px) {
+    .fila>div:nth-child(2) {
+        font-size: 2rem;
+    }
+}
+
+.fila>div:nth-child(3) {
+    width: 75px;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .fila>div:nth-child(3) {
+        width: 100px;
+    }
+}
+
+.panel:nth-child(2) .tabla-canciones>div {
+    border-bottom: 1px solid var(--cracker);
+}
+
+.panel:nth-child(3) .tabla-canciones>div {
+    border-bottom: 1px solid var(--machine);
+}
+
+.panel:nth-child(4) .tabla-canciones>div {
+    border-bottom: 1px solid var(--now);
+}
+
+.panel:nth-child(5) .tabla-canciones>div {
+    border-bottom: 1px solid var(--humanz);
+}
+
+.panel:nth-child(6) .tabla-canciones>div {
+    border-bottom: 1px solid var(--plastic);
+}
+
+.panel:nth-child(7) .tabla-canciones>div {
+    border-bottom: 1px solid var(--fall);
+}
+
+.panel:nth-child(8) .tabla-canciones>div {
+    border-bottom: 1px solid var(--sides);
+}
+
+.panel:nth-child(9) .tabla-canciones>div {
+    border-bottom: 1px solid var(--demon);
+}
+
+.panel:nth-child(10) .tabla-canciones>div {
+    border-bottom: 1px solid var(--laika);
+}
+
+.panel:nth-child(11) .tabla-canciones>div {
+    border-bottom: 1px solid var(--gorillaz);
+}
+
+.panel .tabla-canciones>div:last-of-type {
+    border-bottom: none;
+}
