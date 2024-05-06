@@ -117,6 +117,7 @@ body {
     font-style: normal;
     color: var(--blanco);
     background-color: var(--negro);
+    overflowx: hidden;
     font-feature-settings: "ss02";
     /* Variante de la tipografía Goga */
     transition: all 500ms ease;
